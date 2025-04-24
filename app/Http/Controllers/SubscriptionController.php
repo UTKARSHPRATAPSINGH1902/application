@@ -46,7 +46,7 @@ public function update(Request $request, $id)
             'package_id' => 'required|exists:packages,id',
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255|unique:subscribers,email',
-            'phone' => 'required|string|max:10',
+            'phone' => 'required|string|max:10|unique:subscribers,phone',
         ]);
 
         if ($validator->fails()) {

@@ -206,7 +206,11 @@ $(document).ready(function () {
             $('#storage_size').val(res.data.storage_size);
             $('#storage_unit').val(res.data.storage_unit);
             $('#description').val(res.data.description);
-            $('#checklists').val(res.checklists).trigger('change');
+            $('.checklist-item').prop('checked', false); // Uncheck all first
+res.checklists.forEach(id => {
+    $('#checklist_' + id).prop('checked', true);
+});
+
             $('#packageModal .modal-title').html('<i class="fas fa-edit"></i> Edit Package');
             $('#packageSubmitBtn').html('<i class="fas fa-save"></i> Update Package');
             $('#packageModal').modal('show');

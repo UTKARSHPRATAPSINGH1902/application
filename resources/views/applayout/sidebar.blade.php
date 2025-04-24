@@ -19,8 +19,8 @@
                         
                         <li><a class="menu-item" href={{ route('package.index') }}><i></i><span >PACKAGES</span></a>
                         </li>
-                        <li><a class="menu-item" href={{ route('frontend.packages') }}><i></i><span >SUBSCRIPTION PAGE </span></a>
-                        </li>
+                        {{-- <li><a class="menu-item" href={{ route('frontend.packages') }}><i></i><span >SUBSCRIPTION PAGE </span></a>
+                        </li> --}}
                         <li><a class="menu-item" href={{ route('subscribers.index') }}><i></i><span >SUBSCRIBERS</span></a>
                         </li>
                         
@@ -34,8 +34,8 @@
                         </li>
                     <li class=" nav-item"><a href="#"><i class="la la-user"></i><span class="menu-title">USER OPERATION</span></a>
                         <ul class="menu-content">
-                            <li><a class="menu-item" href={{ route('frontend.packages') }}><i></i><span >PACKAGES </span></a>
-                            </li>
+                            {{-- <li><a class="menu-item" href={{ route('frontend.packages') }}><i></i><span >PACKAGES </span></a>
+                            </li> --}}
 {{--                             
                             <li><a class="menu-item" href={{ route('package.index') }}><i></i><span >PACKAGES</span></a>
                             </li>
